@@ -27,8 +27,10 @@ RUN pip3 install --no-cache-dir -r requires.txt
 # Copia i file dell'applicazione nell'immagine
 COPY . .
 
-RUN python3 setup.py install
+RUN python3 setup.py build
+RUN pip install .
+
 RUN apt update -y && apt install -y gedit
 
 # CMD /bin/bash
-CMD python3 labelme/app.py
+CMD smart_labelme

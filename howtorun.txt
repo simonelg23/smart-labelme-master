@@ -1,0 +1,27 @@
+AZIONI DI SISTEMA
+
+LINUX
+xhost + 
+
+WINDOWS
+non serve
+
+MAC?
+
+
+DOCKERFILE
+
+WINDOWS 
+RUN apt update -y && apt install -y gedit
+
+LINUX
+la linea 33 non serve  
+
+MAC?
+
+DOCKER RUN
+
+docker run -it -v /run/desktop/mnt/host/wslg/.X11-unix:/tmp/.X11-unix `
+            -v /run/desktop/mnt/host/wslg:/mnt/wslg `
+            -e DISPLAY=:0 `
+            -v pwd/labelme:/app/data -it label
