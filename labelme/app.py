@@ -16,7 +16,7 @@ from labelme import __appname__
 from labelme import PY2
 from labelme import QT5
 
-from . import utils
+from labelme import utils
 from labelme.config import get_config
 from labelme.label_file import LabelFile
 from labelme.label_file import LabelFileError
